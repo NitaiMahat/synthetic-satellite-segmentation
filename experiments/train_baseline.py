@@ -10,7 +10,7 @@ import numpy as np
 import torch
 from torch import nn
 from torch.optim import Adam
-from torch.utils.data import DataLoader
+from torch.utils.data import DataLoader, RandomSampler
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
@@ -19,6 +19,7 @@ if str(PROJECT_ROOT) not in sys.path:
 from src.dataset import LoveDADataset
 from src.metrics import mean_iou, per_class_iou, pixel_accuracy, confusion_matrix
 from src.model import UNet
+from src.synthetic import BrightnessMixDataset
 
 
 CLASS_NAMES = [
@@ -41,6 +42,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--learning-rate", type=float, default=1e-4)
     parser.add_argument("--num-workers", type=int, default=0)
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--experiment-name", default="baseline_v1_real_only_rural")
+    parser.add_argument("--synthetic-ratio", type=float, default=0.0)
+    parser.add_argument("--brightness-factors", type=float, nargs="+", default=[0.8, 1.2])
+    parser.add_argument("--train-samples-per-epoch", type=int)
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     parser.add_argument(
         "--output-dir",
@@ -83,11 +88,13 @@ def main() -> None:
     args = parse_args()
     if args.epochs <= 0 or args.batch_size <= 0 or args.image_size <= 0:
         raise ValueError("epochs, batch-size, and image-size must be positive.")
+    if not 0 <= args.synthetic_ratio < 1:
+        raise ValueError("synthetic-ratio must be between 0 and 1.")
 
     set_seed(args.seed)
     device = torch.device(args.device)
     image_size = (args.image_size, args.image_size)
-    train_dataset = LoveDADataset(
+    real_train_dataset = LoveDADataset(
         PROJECT_ROOT / "data/raw/Train/Rural/images_png",
         PROJECT_ROOT / "data/raw/Train/Rural/masks_png",
         image_size=image_size,
@@ -98,7 +105,37 @@ def main() -> None:
         image_size=image_size,
     )
     loader_options = {"batch_size": args.batch_size, "num_workers": args.num_workers}
-    train_loader = DataLoader(train_dataset, shuffle=True, **loader_options)
+    synthetic_details: dict[str, object] = {"type": "none"}
+    if args.synthetic_ratio:
+        train_dataset = BrightnessMixDataset(
+            real_train_dataset,
+            synthetic_ratio=args.synthetic_ratio,
+            brightness_factors=tuple(args.brightness_factors),
+            seed=args.seed,
+        )
+        samples_per_epoch = args.train_samples_per_epoch or len(real_train_dataset)
+        if samples_per_epoch > len(train_dataset):
+            raise ValueError("train-samples-per-epoch cannot exceed the mixed dataset size.")
+        sampler = RandomSampler(
+            train_dataset,
+            replacement=False,
+            num_samples=samples_per_epoch,
+            generator=torch.Generator().manual_seed(args.seed),
+        )
+        train_loader = DataLoader(train_dataset, sampler=sampler, **loader_options)
+        synthetic_details = {
+            "type": "brightness",
+            "requested_final_ratio": args.synthetic_ratio,
+            "effective_final_ratio": train_dataset.effective_synthetic_ratio,
+            "real_samples": train_dataset.real_count,
+            "synthetic_samples": train_dataset.synthetic_count,
+            "mixed_dataset_samples": len(train_dataset),
+            "brightness_factors": args.brightness_factors,
+            "training_samples_per_epoch": samples_per_epoch,
+        }
+    else:
+        train_dataset = real_train_dataset
+        train_loader = DataLoader(train_dataset, shuffle=True, **loader_options)
     val_loader = DataLoader(val_dataset, shuffle=False, **loader_options)
 
     model = UNet(num_classes=7, base_channels=args.base_channels).to(device)
@@ -108,7 +145,7 @@ def main() -> None:
     checkpoint_path = args.output_dir / "best_checkpoint.pt"
     history_path = args.output_dir / "history.json"
     config = {
-        "experiment": "baseline_v1_real_only_rural",
+        "experiment": args.experiment_name,
         "image_size": [args.image_size, args.image_size],
         "batch_size": args.batch_size,
         "epochs": args.epochs,
@@ -120,9 +157,13 @@ def main() -> None:
         "model_architecture": "UNet(base_channels=" + str(args.base_channels) + ")",
         "num_classes": 7,
         "loss": "CrossEntropyLoss(ignore_index=255)",
-        "synthetic_augmentation": "none",
+        "synthetic_augmentation": synthetic_details,
     }
     (args.output_dir / "config.json").write_text(json.dumps(config, indent=2), encoding="utf-8")
+    if args.synthetic_ratio:
+        (args.output_dir / "synthetic_samples.json").write_text(
+            json.dumps(train_dataset.metadata(), indent=2), encoding="utf-8"
+        )
     best_miou = float("-inf")
     history = []
 
@@ -138,7 +179,7 @@ def main() -> None:
             optimizer.step()
             total_loss += loss.item() * images.size(0)
 
-        train_loss = total_loss / len(train_dataset)
+        train_loss = total_loss / len(train_loader.sampler)
         val_loss, matrix = evaluate(model, val_loader, criterion, device)
         val_miou = mean_iou(matrix).item()
         val_accuracy = pixel_accuracy(matrix).item()

@@ -1,0 +1,28 @@
+{
+  "experiment": "synthetic_ratio_10_brightness_rural",
+  "baseline_reference": "models/baseline_v1_complete",
+  "dataset": {
+    "train_split": "Train/Rural",
+    "validation_split": "Val/Rural",
+    "image_size": [512, 512],
+    "num_classes": 7
+  },
+  "model": {
+    "architecture": "UNet",
+    "base_channels": 16
+  },
+  "training": {
+    "epochs": 15,
+    "batch_size": 1,
+    "learning_rate": 0.0001,
+    "optimizer": "Adam",
+    "seed": 42,
+    "samples_per_epoch": 1366
+  },
+  "synthetic": {
+    "type": "brightness",
+    "final_dataset_ratio": 0.1,
+    "brightness_factors": [0.8, 1.2],
+    "mask_policy": "unchanged"
+  }
+}

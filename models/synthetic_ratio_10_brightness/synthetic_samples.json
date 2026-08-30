@@ -1,0 +1,762 @@
+[
+  {
+    "source_index": 1309,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 228,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 51,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 563,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 501,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 457,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 285,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 209,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1116,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 178,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1209,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 864,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 65,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 61,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 191,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 447,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 476,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 1034,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1232,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 54,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1149,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 407,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1330,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 859,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 451,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 919,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1206,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 569,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 13,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 326,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 865,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 696,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 318,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 440,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 689,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 189,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 778,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 198,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 735,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 704,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1236,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 541,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 88,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 940,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1098,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 255,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 775,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 161,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1130,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 600,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1287,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 1266,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 740,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 1182,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 393,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 142,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 93,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 1354,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 466,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 592,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 163,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 206,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 928,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 1301,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 747,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 333,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 758,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 727,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 429,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 546,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1327,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 146,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1247,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 1300,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 350,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 1093,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 334,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 946,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 777,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 552,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1310,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 1140,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 449,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 664,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 114,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 469,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 646,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 821,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 548,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 135,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 432,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 1161,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 644,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 435,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1342,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 1022,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 810,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 1316,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 939,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 292,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 542,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 505,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1103,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 538,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1197,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 877,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1195,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 817,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 741,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 283,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1043,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 1010,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 186,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 96,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 224,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 313,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1285,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 327,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1221,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 130,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 788,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 781,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1220,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 958,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1083,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 514,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1133,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 23,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 234,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 1099,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1312,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 601,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 890,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 323,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 929,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 6,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 539,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 1025,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 365,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 1039,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 217,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 1280,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 611,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 1308,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 765,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 330,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1104,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 1086,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 1,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 1226,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  },
+  {
+    "source_index": 663,
+    "transformation": "brightness",
+    "brightness_factor": 0.8
+  },
+  {
+    "source_index": 1000,
+    "transformation": "brightness",
+    "brightness_factor": 1.2
+  }
+]
