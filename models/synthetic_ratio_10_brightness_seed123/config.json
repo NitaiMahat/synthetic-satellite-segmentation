@@ -1,0 +1,30 @@
+{
+  "experiment": "synthetic_ratio_10_brightness_seed123",
+  "image_size": [
+    512,
+    512
+  ],
+  "batch_size": 1,
+  "epochs": 15,
+  "learning_rate": 0.0001,
+  "optimizer": "Adam",
+  "seed": 123,
+  "train_split": "Train/Rural",
+  "validation_split": "Val/Rural",
+  "model_architecture": "UNet(base_channels=16)",
+  "num_classes": 7,
+  "loss": "CrossEntropyLoss(ignore_index=255)",
+  "synthetic_augmentation": {
+    "type": "brightness",
+    "requested_final_ratio": 0.1,
+    "effective_final_ratio": 0.10013175230566534,
+    "real_samples": 1366,
+    "synthetic_samples": 152,
+    "mixed_dataset_samples": 1518,
+    "brightness_factors": [
+      0.8,
+      1.2
+    ],
+    "training_samples_per_epoch": 1366
+  }
+}
