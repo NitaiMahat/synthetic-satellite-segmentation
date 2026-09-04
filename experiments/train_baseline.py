@@ -19,7 +19,8 @@ if str(PROJECT_ROOT) not in sys.path:
 from src.dataset import LoveDADataset
 from src.metrics import mean_iou, per_class_iou, pixel_accuracy, confusion_matrix
 from src.model import UNet
-from src.synthetic import BrightnessMixDataset
+from src.sampling import class_aware_sampler
+from src.synthetic import BrightnessMixDataset, RotationMixDataset
 
 
 CLASS_NAMES = [
@@ -44,8 +45,21 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--experiment-name", default="baseline_v1_real_only_rural")
     parser.add_argument("--synthetic-ratio", type=float, default=0.0)
+    parser.add_argument(
+        "--synthetic-type",
+        choices=("brightness", "rotation"),
+        default="brightness",
+    )
     parser.add_argument("--brightness-factors", type=float, nargs="+", default=[0.8, 1.2])
+    parser.add_argument("--rotation-quarter-turns", type=int, nargs="+", default=[1, 2, 3])
     parser.add_argument("--train-samples-per-epoch", type=int)
+    parser.add_argument(
+        "--class-aware-sampling",
+        action="store_true",
+        help="Oversample images containing one target segmentation class.",
+    )
+    parser.add_argument("--target-class-id", type=int, default=4)
+    parser.add_argument("--target-class-weight", type=float, default=4.0)
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     parser.add_argument(
         "--output-dir",
@@ -90,6 +104,10 @@ def main() -> None:
         raise ValueError("epochs, batch-size, and image-size must be positive.")
     if not 0 <= args.synthetic_ratio < 1:
         raise ValueError("synthetic-ratio must be between 0 and 1.")
+    if args.synthetic_ratio and args.class_aware_sampling:
+        raise ValueError("Use either synthetic augmentation or class-aware sampling in one experiment.")
+    if args.class_aware_sampling and not 0 <= args.target_class_id < len(CLASS_NAMES):
+        raise ValueError(f"target-class-id must be between 0 and {len(CLASS_NAMES) - 1}.")
 
     set_seed(args.seed)
     device = torch.device(args.device)
@@ -106,13 +124,29 @@ def main() -> None:
     )
     loader_options = {"batch_size": args.batch_size, "num_workers": args.num_workers}
     synthetic_details: dict[str, object] = {"type": "none"}
+    sampling_details: dict[str, object] = {"type": "uniform_shuffle"}
     if args.synthetic_ratio:
-        train_dataset = BrightnessMixDataset(
-            real_train_dataset,
-            synthetic_ratio=args.synthetic_ratio,
-            brightness_factors=tuple(args.brightness_factors),
-            seed=args.seed,
-        )
+        if args.synthetic_type == "brightness":
+            train_dataset = BrightnessMixDataset(
+                real_train_dataset,
+                synthetic_ratio=args.synthetic_ratio,
+                brightness_factors=tuple(args.brightness_factors),
+                seed=args.seed,
+            )
+            augmentation_details: dict[str, object] = {
+                "brightness_factors": args.brightness_factors,
+            }
+        else:
+            train_dataset = RotationMixDataset(
+                real_train_dataset,
+                synthetic_ratio=args.synthetic_ratio,
+                rotation_quarter_turns=tuple(args.rotation_quarter_turns),
+                seed=args.seed,
+            )
+            augmentation_details = {
+                "rotation_quarter_turns": args.rotation_quarter_turns,
+                "rotation_degrees_counterclockwise": [turns * 90 for turns in args.rotation_quarter_turns],
+            }
         samples_per_epoch = args.train_samples_per_epoch or len(real_train_dataset)
         if samples_per_epoch > len(train_dataset):
             raise ValueError("train-samples-per-epoch cannot exceed the mixed dataset size.")
@@ -124,18 +158,38 @@ def main() -> None:
         )
         train_loader = DataLoader(train_dataset, sampler=sampler, **loader_options)
         synthetic_details = {
-            "type": "brightness",
+            "type": args.synthetic_type,
             "requested_final_ratio": args.synthetic_ratio,
             "effective_final_ratio": train_dataset.effective_synthetic_ratio,
             "real_samples": train_dataset.real_count,
             "synthetic_samples": train_dataset.synthetic_count,
             "mixed_dataset_samples": len(train_dataset),
-            "brightness_factors": args.brightness_factors,
             "training_samples_per_epoch": samples_per_epoch,
+            **augmentation_details,
         }
     else:
         train_dataset = real_train_dataset
-        train_loader = DataLoader(train_dataset, shuffle=True, **loader_options)
+        if args.class_aware_sampling:
+            samples_per_epoch = args.train_samples_per_epoch or len(train_dataset)
+            sampler, target_indices = class_aware_sampler(
+                train_dataset,
+                target_class_id=args.target_class_id,
+                target_weight=args.target_class_weight,
+                num_samples=samples_per_epoch,
+                seed=args.seed,
+            )
+            train_loader = DataLoader(train_dataset, sampler=sampler, **loader_options)
+            sampling_details = {
+                "type": "class_aware_oversampling",
+                "target_class_id": args.target_class_id,
+                "target_class_name": CLASS_NAMES[args.target_class_id],
+                "target_class_weight": args.target_class_weight,
+                "target_image_count": len(target_indices),
+                "dataset_image_count": len(train_dataset),
+                "training_samples_per_epoch": samples_per_epoch,
+            }
+        else:
+            train_loader = DataLoader(train_dataset, shuffle=True, **loader_options)
     val_loader = DataLoader(val_dataset, shuffle=False, **loader_options)
 
     model = UNet(num_classes=7, base_channels=args.base_channels).to(device)
@@ -158,11 +212,23 @@ def main() -> None:
         "num_classes": 7,
         "loss": "CrossEntropyLoss(ignore_index=255)",
         "synthetic_augmentation": synthetic_details,
+        "sampling": sampling_details,
     }
     (args.output_dir / "config.json").write_text(json.dumps(config, indent=2), encoding="utf-8")
     if args.synthetic_ratio:
         (args.output_dir / "synthetic_samples.json").write_text(
             json.dumps(train_dataset.metadata(), indent=2), encoding="utf-8"
+        )
+    if args.class_aware_sampling:
+        (args.output_dir / "sampling_metadata.json").write_text(
+            json.dumps(
+                {
+                    **sampling_details,
+                    "target_image_indices": target_indices,
+                },
+                indent=2,
+            ),
+            encoding="utf-8",
         )
     best_miou = float("-inf")
     history = []

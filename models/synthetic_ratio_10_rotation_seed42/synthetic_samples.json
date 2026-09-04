@@ -1,0 +1,914 @@
+[
+  {
+    "source_index": 1309,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 228,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 51,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 563,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 501,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 457,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 285,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 209,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 1116,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 178,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 1209,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 864,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 65,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 61,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 191,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 447,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 476,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 1034,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 1232,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 54,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 1149,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 407,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 1330,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 859,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 451,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 919,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 1206,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 569,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 13,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 326,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 865,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 696,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 318,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 440,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 689,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 189,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 778,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 198,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 735,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 704,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 1236,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 541,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 88,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 940,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 1098,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 255,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 775,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 161,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 1130,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 600,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 1287,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 1266,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 740,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 1182,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 393,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 142,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 93,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 1354,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 466,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 592,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 163,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 206,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 928,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 1301,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 747,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 333,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 758,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 727,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 429,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 546,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 1327,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 146,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 1247,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 1300,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 350,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 1093,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 334,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 946,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 777,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 552,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 1310,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 1140,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 449,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 664,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 114,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 469,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 646,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 821,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 548,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 135,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 432,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 1161,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 644,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 435,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 1342,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 1022,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 810,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 1316,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 939,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 292,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 542,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 505,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 1103,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 538,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 1197,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 877,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 1195,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 817,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 741,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 283,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 1043,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 1010,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 186,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 96,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 224,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 313,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 1285,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 327,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 1221,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 130,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 788,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 781,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 1220,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 958,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 1083,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 514,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 1133,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 23,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 234,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 1099,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 1312,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 601,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 890,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 323,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 929,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 6,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 539,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 1025,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 365,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 1039,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 217,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 1280,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 611,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 1308,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 765,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 330,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 1104,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 1086,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 1,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  },
+  {
+    "source_index": 1226,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 3,
+    "degrees_counterclockwise": 270
+  },
+  {
+    "source_index": 663,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 1,
+    "degrees_counterclockwise": 90
+  },
+  {
+    "source_index": 1000,
+    "transformation": "rotation_90",
+    "quarter_turns_counterclockwise": 2,
+    "degrees_counterclockwise": 180
+  }
+]

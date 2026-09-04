@@ -1,0 +1,29 @@
+{
+  "experiment": "class_aware_barren_seed123",
+  "image_size": [
+    512,
+    512
+  ],
+  "batch_size": 1,
+  "epochs": 15,
+  "learning_rate": 0.0001,
+  "optimizer": "Adam",
+  "seed": 123,
+  "train_split": "Train/Rural",
+  "validation_split": "Val/Rural",
+  "model_architecture": "UNet(base_channels=16)",
+  "num_classes": 7,
+  "loss": "CrossEntropyLoss(ignore_index=255)",
+  "synthetic_augmentation": {
+    "type": "none"
+  },
+  "sampling": {
+    "type": "class_aware_oversampling",
+    "target_class_id": 4,
+    "target_class_name": "Barren",
+    "target_class_weight": 4.0,
+    "target_image_count": 512,
+    "dataset_image_count": 1366,
+    "training_samples_per_epoch": 1366
+  }
+}
