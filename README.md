@@ -2,6 +2,19 @@
 
 This project studies whether lightweight synthetic data methods can help a satellite-image segmentation model work in a new environment.
 
+## Why This Project Matters
+
+This project was done to explore a practical problem: **labeled satellite images are expensive and time-consuming to create**. A person must look at an image and carefully mark every pixel as a building, road, water, forest, agriculture, or another land type.
+
+Often, an organization has labeled images from one place, such as rural areas, but needs useful maps for a different place, such as a city. Collecting and labeling a completely new dataset for every new location can cost a lot of time and money.
+
+This project asks whether a model trained on Rural images can do better on unseen Urban images when we:
+
+- create simple artificial versions of some training images, such as slightly brighter or darker copies; or
+- show the model more examples of a rare land type that it would otherwise miss.
+
+The goal is not to replace new labeled data completely. The goal is to find lower-cost methods that help a model adapt more usefully before a large new labeling effort is needed.
+
 ## Project Status
 
 **Completed research phase:** Rural-to-Urban cross-domain evaluation.
